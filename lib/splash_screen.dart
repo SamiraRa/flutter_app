@@ -2,6 +2,7 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:gaming_streaming/UI/ac_series_list.dart';
+import 'package:gaming_streaming/UI/home_page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -52,7 +53,7 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
 
         // pageTransitionType: PageTransitionType.scale,
-        nextScreen: const GamesListScreen(),
+        nextScreen: const HomePage(),
         splashTransition: SplashTransition.fadeTransition,
         duration: 1000,
       ),
